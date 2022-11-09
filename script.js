@@ -1,6 +1,6 @@
 const canvas = document.querySelector('canvas')
 const ctx = canvas.getContext('2d')
-let gravity = 0.1
+const gravity = 0.1
 let gameOver = false
 
 document.body.style.width = innerWidth
@@ -125,7 +125,7 @@ function animate () {
     return
   }
   requestAnimationFrame(animate)
-  ctx.reset()
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
   pole.create()
   hole.create()
   character.create()
