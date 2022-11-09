@@ -3,6 +3,9 @@ const ctx = canvas.getContext('2d')
 let gravity = 0.1
 let gameOver = false
 
+document.body.style.width = innerWidth
+document.body.style.height = innerHeight
+
 const pole = {
   width: 20,
   height: canvas.height,
